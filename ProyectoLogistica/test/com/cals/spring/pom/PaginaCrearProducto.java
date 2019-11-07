@@ -25,7 +25,6 @@ public class PaginaCrearProducto extends Base {
 	
 	
 	
-	//Datos del Producto
 	
 	public PaginaCrearProducto(WebDriver driver)
 	{
@@ -40,7 +39,7 @@ public class PaginaCrearProducto extends Base {
 		/*if(isDisplayed(registrarProductoLocator))
 		{*/
 			type("Arroz", txtNombre);
-			type("Arroz costeño de 100 kilos", txtDescripcion);
+			type("Arroz costeno de 100 kilos", txtDescripcion);
 			type("Abarrotes", txtCategoria);
 			type("1", txtEstado);
 			

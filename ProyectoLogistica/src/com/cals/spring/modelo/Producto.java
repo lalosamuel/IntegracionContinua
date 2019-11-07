@@ -66,14 +66,7 @@ public class Producto {
 		this.categoria = categoria;
 	}
 
-	
-	
-	/*	@Override
-	public String toString() {
-		return "Producto [id=" + id + ",  descripcion=" + descripcion + ", estado=" + estado + "]";
-	}
-	*/
-	
+		
 	@Override
 	public String toString() {
 		return "Producto [id=" + id + ", descripcion=" + descripcion + ", estado=" + estado + ", nombre=" + nombre

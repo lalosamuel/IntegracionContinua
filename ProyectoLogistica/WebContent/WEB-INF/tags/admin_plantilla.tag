@@ -41,9 +41,10 @@
   
 	<!-- DataTables -->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  
+  <!--
   <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/assets/admin/bower_components/grid/responsive.bootstrap.min.css">
-    
-    
+   -->
 	
 	
 

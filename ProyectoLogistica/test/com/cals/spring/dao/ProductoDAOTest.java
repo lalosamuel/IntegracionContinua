@@ -22,30 +22,37 @@ class ProductoDAOTest {
 	{
 		dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/contactdb");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/integracion");
 		dataSource.setUsername("root");
 		dataSource.setPassword("123456");
 		dao=new ProductoDAOImpl(dataSource);
 	}
 		
+	
+	
+	
+	
 	@Test
 	void testGuardar() {
 	
 		Producto producto=new Producto("Producto Unitario","Descripcion Unitaria","Categoria","1");
 		int resultado = dao.guardar(producto);
 		assertTrue(resultado>0);
-		
 	}
+	
+	
 
+	
 	@Test
 	void testEditar() {
 		
 		Producto producto=new Producto(74,"Producto Modificado","Descripcion Modificado","Categoria Modificado","2");
 		int resultado = dao.editar(producto);
-		
 		assertTrue(resultado>0);
 		
 	}
+	
+	
 
 	@Test
 	void testObtener() {
@@ -58,6 +65,8 @@ class ProductoDAOTest {
 		}
 		assertNotNull(producto);
 	}
+	
+	
 
 	@Test
 	void testBorrar() {
@@ -68,6 +77,9 @@ class ProductoDAOTest {
 		assertTrue(result>0);
 	}
 
+	
+	
+	
 	@Test
 	void testLista() {
 		
@@ -80,7 +92,6 @@ class ProductoDAOTest {
 		}
 		
 		assertTrue(!listProductos.isEmpty());
-		
 	
 	}
 	
