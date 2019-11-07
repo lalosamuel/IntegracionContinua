@@ -9,7 +9,6 @@
 <mt:admin_plantilla title="Dashboard">
 	<jsp:attribute name="content">
 	
-	
 	<!-- Main content -->
     <section class="content">
       
@@ -25,6 +24,7 @@
             <div class="box-body">
               
               <table class="table table-striped table-bordered nowrap dataTable dtr-inline" cellspacing="0" width="100%" role="grid" aria-describedby="example_info" style="width: 100%;" id="tablaProducto">
+              
                 <thead>
                 <tr>
                   <th>N°</th>
@@ -106,22 +106,7 @@
 </script>
 	
 	
-	
-		 <script>
-		 /*
-  $(function () {
-    $('#tablaProducto').DataTable()
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
-  })
-  */
-</script>
+		 
 
 
 <script>

@@ -41,7 +41,9 @@
   
 	<!-- DataTables -->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/assets/admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
-  
+  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/assets/admin/bower_components/grid/responsive.bootstrap.min.css">
+    
+    
 	
 	
 
@@ -174,7 +176,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="${pageContext.request.contextPath}/admin/dashboard"><i class="fa fa-circle-o"></i> Productos</a></li>
+            <li class="active"><a href="${pageContext.request.contextPath}"><i class="fa fa-circle-o"></i> Productos</a></li>
             
           </ul>
         </li>
@@ -262,6 +264,21 @@
 <script src="${pageContext.request.contextPath}/resources/assets/admin/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 
 
+
+
+ 
+
+    <script type="text/javascript" language="javascript" src="${pageContext.request.contextPath}/resources/assets/admin/bower_components/grid/jquery.dataTables.min.js">
+    </script>
+    <script type="text/javascript" language="javascript" src="${pageContext.request.contextPath}/resources/assets/admin/bower_components/grid/dataTables.bootstrap.min.js">
+    </script>
+    <script type="text/javascript" language="javascript" src="${pageContext.request.contextPath}/resources/assets/admin/bower_components/grid/dataTables.fixedHeader.min.js">
+    </script>
+    <script type="text/javascript" language="javascript" src="${pageContext.request.contextPath}/resources/assets/admin/bower_components/grid/dataTables.responsive.min.js">
+    </script>
+    <script type="text/javascript" language="javascript" src="${pageContext.request.contextPath}/resources/assets/admin/bower_components/grid/responsive.bootstrap.min.js">
+    </script>
+    
 </body>
 </html>
 

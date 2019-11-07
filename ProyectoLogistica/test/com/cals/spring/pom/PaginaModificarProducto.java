@@ -1,22 +1,17 @@
 package com.cals.spring.pom;
 
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 
 public class PaginaModificarProducto extends Base {
 
 
-	By modificarProductoLocator = By.xpath("//*[@id=\"tablaProducto\"]/tbody/tr/td[6]/a[1]");
-	
-	
+	By modificarProductoLocator = By.cssSelector("#tablaProducto > tbody > tr > td:nth-child(6) > a:nth-child(1)");
+		
 	By guardarProductoLocator = By.name("btnGrabar");
-	
-	
-	
+		
 	By txtNombre = By.id("nombre");
 	By txtDescripcion = By.id("descripcion");
 	By txtCategoria = By.id("categoria");
@@ -34,7 +29,7 @@ public class PaginaModificarProducto extends Base {
 		Thread.sleep(2000);
 	
 			type("Arroz MODIFICADO", txtNombre);
-			type("Arroz costeño de 100 kilos MODIFICADO", txtDescripcion);
+			type("Arroz costeno de MODIFICADO", txtDescripcion);
 			type("Abarrotes MODIFICADO", txtCategoria);
 			type("1", txtEstado);
 			

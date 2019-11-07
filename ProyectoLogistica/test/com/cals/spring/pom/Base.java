@@ -19,6 +19,7 @@ public class Base {
 	{
 		System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 		driver=new ChromeDriver();
+		driver.manage().window().maximize();
 		return driver;
 		
 	}
