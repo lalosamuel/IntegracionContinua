@@ -29,7 +29,7 @@ public class PaginaModificarProducto extends Base {
 		Thread.sleep(2000);
 	
 			type("Arroz MODIFICADO", txtNombre);
-			type("Arroz costeno de MODIFICADO", txtDescripcion);
+			type("Arroz costeno MODIFICADO", txtDescripcion);
 			type("Abarrotes MODIFICADO", txtCategoria);
 			type("1", txtEstado);
 			
