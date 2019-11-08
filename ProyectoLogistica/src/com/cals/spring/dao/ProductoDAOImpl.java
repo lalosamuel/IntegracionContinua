@@ -16,12 +16,14 @@ import com.cals.spring.modelo.Producto;
 public class ProductoDAOImpl implements ProductoDAO {
 
 
+	
 	private JdbcTemplate jdbcTemplate;
 	
 	public ProductoDAOImpl(DataSource dataSource) {
 
 		this.jdbcTemplate =new JdbcTemplate(dataSource);
 	}
+	
 	
 	
 	@Override

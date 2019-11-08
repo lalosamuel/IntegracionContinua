@@ -29,35 +29,30 @@ class ProductoDAOTest {
 	}
 		
 	
-	
-	
-	
+	//Prueba Unitaria Guardar
 	@Test
 	void testGuardar() {
 	
-		Producto producto=new Producto("Producto Unitario","Descripcion Unitaria","Categoria","1");
+		Producto producto=new Producto("Azucar (Prueba Unitaria)","Azucar Casa Grande 50k","Abarrotes","1");
 		int resultado = dao.guardar(producto);
 		assertTrue(resultado>0);
 	}
 	
-	
-
-	
+	//Prueba Unitaria Editar
 	@Test
 	void testEditar() {
 		
-		Producto producto=new Producto(74,"Producto Modificado","Descripcion Modificado","Categoria Modificado","2");
+		Producto producto=new Producto(40,"Leche Deslactosada","Leche gloria en Caja","Lacteos","2");
 		int resultado = dao.editar(producto);
 		assertTrue(resultado>0);
 		
 	}
-	
-	
 
+	//Prueba Unitaria Obtener
 	@Test
 	void testObtener() {
 		
-		Integer id=28;
+		Integer id=41;
 		Producto producto =dao.obtener(id);
 		if(producto!=null)
 		{
@@ -66,12 +61,12 @@ class ProductoDAOTest {
 		assertNotNull(producto);
 	}
 	
-	
 
+	//Prueba Unitaria Borrar
 	@Test
 	void testBorrar() {
 		
-		Integer id=73;
+		Integer id=42;
 		int result=dao.borrar(id);
 		
 		assertTrue(result>0);
@@ -79,7 +74,7 @@ class ProductoDAOTest {
 
 	
 	
-	
+	//Prueba Unitaria Listar
 	@Test
 	void testLista() {
 		

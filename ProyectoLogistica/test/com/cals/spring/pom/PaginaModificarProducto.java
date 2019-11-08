@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 
 public class PaginaModificarProducto extends Base {
 
-
 	By modificarProductoLocator = By.cssSelector("#tablaProducto > tbody > tr > td:nth-child(6) > a:nth-child(1)");
 		
 	By guardarProductoLocator = By.name("btnGrabar");
@@ -35,6 +34,7 @@ public class PaginaModificarProducto extends Base {
 			
 			click(guardarProductoLocator);
 	
+			
 		
 	}
 	

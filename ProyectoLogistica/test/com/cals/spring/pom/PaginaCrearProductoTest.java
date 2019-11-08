@@ -24,14 +24,14 @@ public class PaginaCrearProductoTest {
 	
 	@AfterEach
 	void tearDown() throws Exception {
-		//driver.quit();
+		driver.quit();
 	}
 
 	@Test
 	void test()  throws InterruptedException {
 		
 		paginaCrearProducto.registrarProducto();
-		//Thread.sleep(2000);
+		Thread.sleep(2000);
 		assertEquals("1", paginaCrearProducto.registrarMensaje());
 	}
 

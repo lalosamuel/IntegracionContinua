@@ -22,14 +22,14 @@ public class PaginaModificarProductoTest {
 
 	@AfterEach
 	void tearDown() throws Exception {
-		//driver.quit();
+		driver.quit();
 	}
 
 	@Test
 	void test()  throws InterruptedException {
 		
 		paginaModificarProducto.modificarProducto();
-		//Thread.sleep(2000);
+		Thread.sleep(2000);
 		assertEquals("1", paginaModificarProducto.modificarMensaje());
 	}
 

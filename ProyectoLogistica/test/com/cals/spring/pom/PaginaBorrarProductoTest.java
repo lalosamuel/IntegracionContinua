@@ -20,16 +20,17 @@ class PaginaBorrarProductoTest {
 		
 	}
 
+	
 	@AfterEach
 	void tearDown() throws Exception {
-		//driver.quit();
+		driver.quit();
 	}
 
 	@Test
 	void test()  throws InterruptedException{
 		
 		paginaBorrarProducto.borrarProducto();
-		//Thread.sleep(2000);
+		Thread.sleep(2000);
 		assertEquals("1", paginaBorrarProducto.borrarMensaje());
 	}
 

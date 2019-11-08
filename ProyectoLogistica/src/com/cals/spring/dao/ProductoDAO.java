@@ -15,6 +15,6 @@ public interface ProductoDAO {
 	
 	public List<Producto> lista();
 	
-	public List<Producto> listado();//nuevo
+	public List<Producto> listado();
 	
 }
